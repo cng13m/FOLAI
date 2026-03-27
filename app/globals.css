@@ -20,10 +20,7 @@ body {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
-  background:
-    radial-gradient(circle at 50% -8%, rgba(190, 242, 255, 0.1), transparent 28%),
-    radial-gradient(circle at 82% 18%, rgba(120, 169, 255, 0.08), transparent 24%),
-    linear-gradient(180deg, #070b14 0%, #0a0f19 46%, #0c111b 100%);
+  background: linear-gradient(180deg, #ebebea 0%, #e2dfdb 100%);
   color: var(--text);
   font-family: "Manrope", sans-serif;
 }
@@ -41,8 +38,8 @@ select {
 }
 
 ::selection {
-  background: rgba(125, 211, 252, 0.22);
-  color: #ffffff;
+  background: rgba(17, 17, 18, 0.14);
+  color: #111112;
 }
 
 .font-display {
@@ -59,59 +56,4 @@ select {
 
 .text-balance {
   text-wrap: balance;
-}
-
-.hero-grid {
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
-  background-size: 88px 88px;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), transparent 88%);
-}
-
-.radial-line {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.04) 0, transparent 52%);
-  filter: blur(48px);
-  pointer-events: none;
-}
-
-.grain {
-  position: absolute;
-  inset: 0;
-  opacity: 0.03;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-  background-size: 4px 4px;
-  mix-blend-mode: soft-light;
-  pointer-events: none;
-}
-
-.card-outline {
-  position: relative;
-  overflow: hidden;
-}
-
-.card-outline::after {
-  content: "";
-  position: absolute;
-  inset: -100%;
-  background: linear-gradient(120deg, transparent 38%, rgba(255, 255, 255, 0.06), transparent 64%);
-  transform: translateX(-100%);
-  animation: shine 16s linear infinite;
-  pointer-events: none;
-}
-
-.section-fade {
-  position: relative;
-}
-
-.section-fade::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent, rgba(8, 12, 24, 0.08) 28%, transparent 100%);
-  pointer-events: none;
 }
