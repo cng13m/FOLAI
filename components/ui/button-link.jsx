@@ -1,8 +1,8 @@
 export function ButtonLink({ href, children, variant = "primary", className = "" }) {
   const styles =
     variant === "secondary"
-      ? "border border-white/14 bg-white/[0.03] text-white hover:border-cyan-300/40 hover:bg-white/[0.06]"
-      : "border border-cyan-300/30 bg-gradient-to-r from-cyan-300 via-sky-400 to-emerald-300 text-slate-950 shadow-[0_18px_50px_rgba(103,232,249,0.22)] hover:scale-[1.01] hover:shadow-[0_24px_70px_rgba(103,232,249,0.32)]";
+      ? "border border-white/12 bg-transparent text-white hover:border-white/24 hover:bg-white/[0.04]"
+      : "border border-white/12 bg-[#f3f1ea] text-slate-950 hover:bg-white hover:shadow-[0_16px_42px_rgba(255,255,255,0.08)]";
 
   return (
     <a

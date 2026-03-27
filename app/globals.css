@@ -21,10 +21,9 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at 12% 18%, rgba(96, 165, 250, 0.18), transparent 28%),
-    radial-gradient(circle at 82% 12%, rgba(82, 241, 192, 0.12), transparent 28%),
-    radial-gradient(circle at 52% 74%, rgba(155, 140, 255, 0.16), transparent 34%),
-    linear-gradient(180deg, #040714 0%, #060816 44%, #070d1b 100%);
+    radial-gradient(circle at 50% -8%, rgba(190, 242, 255, 0.1), transparent 28%),
+    radial-gradient(circle at 82% 18%, rgba(120, 169, 255, 0.08), transparent 24%),
+    linear-gradient(180deg, #070b14 0%, #0a0f19 46%, #0c111b 100%);
   color: var(--text);
   font-family: "Manrope", sans-serif;
 }
@@ -55,7 +54,7 @@ select {
 }
 
 .glass-panel {
-  @apply border border-white/10 bg-white/[0.05] backdrop-blur-2xl;
+  @apply border border-white/10 bg-white/[0.03] backdrop-blur-xl;
 }
 
 .text-balance {
@@ -64,30 +63,28 @@ select {
 
 .hero-grid {
   background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 72px 72px;
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 88px 88px;
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), transparent 88%);
 }
 
 .radial-line {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at center, rgba(125, 211, 252, 0.14) 0, transparent 48%),
-    conic-gradient(from 180deg at 50% 50%, rgba(125, 211, 252, 0.08), transparent 28%, rgba(155, 140, 255, 0.08), transparent 60%, rgba(82, 241, 192, 0.08), transparent 86%);
-  filter: blur(32px);
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.04) 0, transparent 52%);
+  filter: blur(48px);
   pointer-events: none;
 }
 
 .grain {
   position: absolute;
   inset: 0;
-  opacity: 0.08;
+  opacity: 0.03;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 3px 3px;
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 4px 4px;
   mix-blend-mode: soft-light;
   pointer-events: none;
 }
@@ -101,9 +98,9 @@ select {
   content: "";
   position: absolute;
   inset: -100%;
-  background: linear-gradient(120deg, transparent 32%, rgba(125, 211, 252, 0.16), transparent 68%);
+  background: linear-gradient(120deg, transparent 38%, rgba(255, 255, 255, 0.06), transparent 64%);
   transform: translateX(-100%);
-  animation: shine 12s linear infinite;
+  animation: shine 16s linear infinite;
   pointer-events: none;
 }
 
@@ -115,6 +112,6 @@ select {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent, rgba(8, 12, 24, 0.12) 28%, transparent 100%);
+  background: linear-gradient(180deg, transparent, rgba(8, 12, 24, 0.08) 28%, transparent 100%);
   pointer-events: none;
 }
