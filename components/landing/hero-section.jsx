@@ -7,7 +7,7 @@ import { Reveal } from "@/components/ui/reveal";
 import { SectionShell } from "@/components/ui/section-shell";
 
 const metrics = [
-  { value: "24/7", label: "Biseda automatike ne shqip" },
+  { value: "24/7", label: "Biseda automatike ne SHQIP" },
   { value: "< 10 sek", label: "Pergjigje ne Instagram, WhatsApp dhe Messenger" },
   { value: "1 panel", label: "Rezervime per klinika dhe restorante" },
   { value: "Email + WA", label: "Njoftime direkte per biznesin" }
@@ -15,7 +15,7 @@ const metrics = [
 
 export function HeroSection() {
   return (
-    <SectionShell id="krye" className="pb-8 pt-6 sm:pb-10 sm:pt-8">
+    <SectionShell id="krye" className="pb-8 pt-4 sm:pb-10 sm:pt-5">
       <Reveal>
         <div className="overflow-hidden rounded-[2rem] border border-white/8 bg-[#111112] p-3 sm:p-4">
           <div className="relative overflow-hidden rounded-[1.6rem] border border-white/6 bg-[#131314] px-5 py-14 sm:px-10 sm:py-16 lg:px-12 lg:py-20">
@@ -34,14 +34,14 @@ export function HeroSection() {
 
             <div className="relative mx-auto max-w-3xl text-center">
               <div className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/52">
-                SaaS per rezervime me asistent AI ne shqip
+                SaaS per rezervime me asistent AI ne SHQIP
               </div>
               <h1 className="font-display mx-auto mt-6 max-w-4xl text-balance text-4xl font-semibold leading-[1.02] text-white sm:text-6xl lg:text-[5rem]">
                 Agjenti qe flet me klientet, cakton oraret dhe njofton biznesin ne kohe reale.
               </h1>
               <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-white/68 sm:text-lg">
-                FOL.AI merr mesazhet nga Instagram, Facebook dhe WhatsApp, flet me klientet ne shqip,
-                regjistron rezervimet ne Google Sheets ose Docs dhe dergon njoftime te biznesi me email ose
+                FOL.AI merr mesazhet nga Instagram, Facebook dhe WhatsApp, flet me klientet ne SHQIP,
+                regjistron rezervimet ne Google Sheets dhe dergon njoftime te biznesi me email ose
                 WhatsApp.
               </p>
 

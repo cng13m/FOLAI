@@ -14,8 +14,8 @@ export function LandingPage() {
     <main className="relative min-h-screen overflow-hidden bg-transparent text-white">
       <AnimatedBackground />
 
-      <div className="relative z-10 px-2 py-2 sm:px-3 sm:py-3 lg:px-4 lg:py-4">
-        <div className="mx-auto max-w-[1720px] overflow-hidden rounded-[1.6rem] border border-black/5 bg-[#0b0b0c] shadow-[0_40px_120px_rgba(17,17,17,0.18)] sm:rounded-[2rem]">
+      <div className="relative z-10 px-0 py-0">
+        <div className="mx-auto min-h-screen max-w-none overflow-hidden rounded-none border-0 bg-[#0b0b0c] shadow-none">
           <Navbar />
           <HeroSection />
           <HowItWorksSection />

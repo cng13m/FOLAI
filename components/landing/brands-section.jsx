@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionShell } from "@/components/ui/section-shell";
 
-const brands = ["Instagram", "Facebook", "WhatsApp", "Google Sheets", "Email alerts"];
+const brands = ["Instagram", "Facebook", "WhatsApp", "Google Sheets", "Njoftime me email"];
 
 export function BrandsSection() {
   return (

@@ -6,8 +6,8 @@ import { Reveal } from "@/components/ui/reveal";
 import { SectionShell } from "@/components/ui/section-shell";
 
 const points = [
-  { icon: DatabaseZap, label: "Google Sheets / Docs si backend i pare" },
-  { icon: BellRing, label: "Email dhe WhatsApp alerts per stafin" }
+  { icon: DatabaseZap, label: "Google Sheets si backend i pare" },
+  { icon: BellRing, label: "Njoftime me email dhe WhatsApp per stafin" }
 ];
 
 export function FeaturePanelsSection() {
@@ -24,8 +24,8 @@ export function FeaturePanelsSection() {
                 Nje MVP i forte qe nis me kanalet sociale dhe nje sistem te thjeshte rezervimesh.
               </h2>
               <p className="mt-5 max-w-xl text-base leading-8 text-white/56">
-                Mund ta nisni pa software te rende: AI agent mbledh kerkesen, kontrollon rregullat e biznesit,
-                shkruan ne Google Sheets ose Docs dhe njofton pronarin ose recepsionin.
+                Mund ta nisni pa software te rende: asistenti AI mbledh kerkesen, kontrollon rregullat e biznesit,
+                shkruan ne Google Sheets dhe njofton pronarin ose recepsionin.
               </p>
 
               <div className="mt-12 flex flex-wrap gap-10">

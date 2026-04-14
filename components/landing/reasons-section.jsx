@@ -5,10 +5,10 @@ import { SectionShell } from "@/components/ui/section-shell";
 
 const cards = [
   {
-    eyebrow: "AI receptionist per bisedat e para",
+    eyebrow: "Asistent AI per bisedat e para",
     title: "Klienti nuk pret per pergjigje dhe biznesi nuk humbet lead-et e nxehta.",
     description:
-      "FOL.AI kupton pyetjet me te zakonshme, flet natyrshem ne shqip dhe i con klientet drejt rezervimit te sakte.",
+      "FOL.AI kupton pyetjet me te zakonshme, flet natyrshem ne SHQIP dhe i con klientet drejt rezervimit te sakte.",
     button: "Shiko flow-in",
     tone:
       "bg-[linear-gradient(135deg,rgba(248,241,247,0.98),rgba(241,228,244,0.92))] text-slate-950",
@@ -18,7 +18,7 @@ const cards = [
   },
   {
     eyebrow: "Rezervime qe futen direkt ne sistemin e punes",
-    title: "Orari, tavolina ose takimi kalojne ne nje pipeline te vetme operative.",
+    title: "Orari, tavolina ose takimi kalojne ne nje rrjedhe te vetme operative.",
     description:
       "Perfekt per mjeke, klinika, dentiste dhe restorante qe duan me pak pune manuale dhe me shume kontroll.",
     button: "Shiko platformen",
@@ -40,7 +40,7 @@ export function ReasonsSection() {
             Me pak telefonata, me pak humbje orari, me shume rezervime te kapura.
           </h2>
           <p className="mt-5 text-base leading-8 text-white/56 sm:text-lg">
-            Produkti eshte projektuar per bizneset qe jetojne nga shpejtesia e pergjigjes dhe saktesia e kalendarit.
+            Produkti eshte projektuar per bizneset qe varen nga shpejtesia e pergjigjes dhe saktesia e kalendarit.
           </p>
         </div>
       </Reveal>
@@ -100,7 +100,7 @@ export function ReasonsSection() {
           <div className="h-4 w-px bg-white/10" />
           <div className="text-sm text-white/60">Rezervime te automatizuara</div>
           <div className="h-4 w-px bg-white/10" />
-          <div className="text-sm text-white/60">Pergjigje ne gjuhen shqipe</div>
+          <div className="text-sm text-white/60">Pergjigje ne SHQIP</div>
         </div>
       </Reveal>
     </SectionShell>

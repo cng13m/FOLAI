@@ -11,13 +11,13 @@ const steps = [
   },
   {
     icon: Sparkles,
-    title: "Agjenti AI flet ne albanian",
-    description: "Boti pyet per diten, oren, sherbimin dhe mbyll paqartesite si nje recepsionist i mire."
+    title: "Agjenti AI flet ne SHQIP",
+    description: "Boti pyet per diten, oren dhe sherbimin, pastaj e con biseden deri te rezervimi."
   },
   {
     icon: CalendarCheck2,
     title: "Rezervimi regjistrohet",
-    description: "Takimi ose tavolina ruhet ne Google Sheets ose Docs me emrin, oren dhe detajet."
+    description: "Takimi ose tavolina ruhet ne Google Sheets me emrin, oren dhe detajet."
   },
   {
     icon: BellRing,
@@ -33,7 +33,7 @@ export function HowItWorksSection() {
         <SectionHeading
           eyebrow="Si funksionon"
           title="Nga mesazhi i pare deri te rezervimi i konfirmuar, pa telefonata dhe pa konfuzion."
-          description="Ky eshte flow-i kryesor i produktit: klienti shkruan ne rrjetet sociale, AI agent mbledh te dhenat, regjistron takimin dhe sinjalizon ekipin ne cast."
+          description="Kjo eshte rrjedha kryesore e produktit: klienti shkruan ne rrjetet sociale, agjenti AI mbledh te dhenat, regjistron takimin dhe sinjalizon ekipin ne cast."
           align="center"
         />
       </Reveal>

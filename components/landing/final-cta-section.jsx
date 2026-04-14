@@ -9,7 +9,7 @@ export function FinalCtaSection() {
       <Reveal>
         <div className="rounded-[2rem] border border-white/8 bg-[linear-gradient(135deg,#121213_0%,#171719_100%)] px-6 py-12 sm:px-10 sm:py-14 lg:px-14">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/38">Hapi i ardhshem</div>
+            <div className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/38">Hapi i radhes</div>
             <h2 className="font-display mt-5 text-balance text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-[3.15rem]">
               Ky koncept eshte gati te kthehet ne nje MVP te vertete per mjeke dhe restorante.
             </h2>

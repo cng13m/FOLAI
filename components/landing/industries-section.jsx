@@ -39,7 +39,7 @@ export function IndustriesSection() {
           <SectionHeading
             eyebrow="Per ke eshte"
             title="Ndertuar per biznese qe humbin para sa here nje mesazh mbetet pa pergjigje."
-            description="Nga klinikat dentare te restorantet dhe sallonet, FOL.AI pershtatet me menyren si punoni dhe ruan nje komunikim te qarte me klientin."
+            description="Nga klinikat dentare te restorantet dhe sallonet, FOL.AI pershtatet me menyren si punoni dhe mban komunikimin te qarte me klientin."
           />
         </Reveal>
 
