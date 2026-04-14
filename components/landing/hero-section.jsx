@@ -15,10 +15,10 @@ const metrics = [
 
 export function HeroSection() {
   return (
-    <SectionShell id="krye" className="pb-8 pt-8 sm:pb-10 sm:pt-10">
+    <SectionShell id="krye" className="pb-8 pt-6 sm:pb-10 sm:pt-8">
       <Reveal>
-        <div className="overflow-hidden rounded-[2.25rem] border border-white/8 bg-[#111112] p-4 sm:p-5">
-          <div className="relative overflow-hidden rounded-[1.85rem] border border-white/6 bg-[#131314] px-5 py-14 sm:px-10 sm:py-16 lg:px-12 lg:py-20">
+        <div className="overflow-hidden rounded-[2rem] border border-white/8 bg-[#111112] p-3 sm:p-4">
+          <div className="relative overflow-hidden rounded-[1.6rem] border border-white/6 bg-[#131314] px-5 py-14 sm:px-10 sm:py-16 lg:px-12 lg:py-20">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_18%,rgba(255,214,164,0.16),transparent_18%),radial-gradient(circle_at_68%_30%,rgba(236,67,137,0.18),transparent_20%),radial-gradient(circle_at_78%_18%,rgba(168,61,255,0.18),transparent_16%)]" />
             <motion.div
               className="absolute left-[8%] top-[6%] h-[20rem] w-[20rem] rounded-[38%] bg-[linear-gradient(135deg,#f5d5a8_0%,#dd5a47_28%,#d13a89_62%,#7c30ff_100%)] opacity-90 shadow-[0_32px_120px_rgba(0,0,0,0.4)]"
@@ -34,14 +34,14 @@ export function HeroSection() {
 
             <div className="relative mx-auto max-w-3xl text-center">
               <div className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/52">
-                SaaS per rezervime me AI agent ne gjuhen shqipe
+                SaaS per rezervime me asistent AI ne shqip
               </div>
               <h1 className="font-display mx-auto mt-6 max-w-4xl text-balance text-4xl font-semibold leading-[1.02] text-white sm:text-6xl lg:text-[5rem]">
                 Agjenti qe flet me klientet, cakton oraret dhe njofton biznesin ne kohe reale.
               </h1>
               <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-white/68 sm:text-lg">
-                FOL.AI merr mesazhet nga Instagram, Facebook dhe WhatsApp, flet me klientet ne albanian,
-                regjistron rezervimet ne Google Sheets ose Docs, dhe dergon njoftime te biznesi me email ose
+                FOL.AI merr mesazhet nga Instagram, Facebook dhe WhatsApp, flet me klientet ne shqip,
+                regjistron rezervimet ne Google Sheets ose Docs dhe dergon njoftime te biznesi me email ose
                 WhatsApp.
               </p>
 

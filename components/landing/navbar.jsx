@@ -16,7 +16,7 @@ export function Navbar() {
       initial={{ opacity: 0, y: -18 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      className="relative z-30 px-5 pt-5 sm:px-8 sm:pt-8"
+      className="relative z-30 px-4 pt-4 sm:px-6 sm:pt-6"
     >
       <div className="flex items-center justify-between rounded-full border border-white/8 bg-white/[0.03] px-4 py-3 backdrop-blur-xl sm:px-6">
         <a href="#krye" className="flex items-center gap-3">
@@ -25,7 +25,7 @@ export function Navbar() {
           </div>
           <div>
             <div className="font-display text-sm font-semibold tracking-[0.34em] text-white">FOL.AI</div>
-            <div className="text-[0.7rem] tracking-[0.2em] text-white/40">AI booking agent per biznese</div>
+            <div className="text-[0.7rem] tracking-[0.2em] text-white/40">Asistent AI per rezervime</div>
           </div>
         </a>
 

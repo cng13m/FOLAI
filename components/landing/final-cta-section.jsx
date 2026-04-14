@@ -14,8 +14,8 @@ export function FinalCtaSection() {
               Ky koncept eshte gati te kthehet ne nje MVP te vertete per mjeke dhe restorante.
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-white/56 sm:text-lg">
-              Faza e pare mund te ndertohet me inbox integrations, booking logic per biznes, Google Sheets si datastore
-              dhe njoftime operative me email ose WhatsApp.
+              Faza e pare mund te ndertohet me integrime me inbox-et sociale, logjike rezervimi per biznesin,
+              Google Sheets si datastore dhe njoftime operative me email ose WhatsApp.
             </p>
             <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <ButtonLink href="mailto:demo@fol.ai?subject=FOL.AI%20MVP" variant="light" className="gap-2 px-7 py-3.5">
