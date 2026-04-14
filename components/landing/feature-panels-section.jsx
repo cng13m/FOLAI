@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { BarChart3, BadgeDollarSign, ChevronRight } from "lucide-react";
+import { BarChart3, BellRing, ChevronRight, DatabaseZap } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionShell } from "@/components/ui/section-shell";
 
 const points = [
-  { icon: BarChart3, label: "Rritje me performancë" },
-  { icon: BadgeDollarSign, label: "Pa kosto të fshehura" }
+  { icon: DatabaseZap, label: "Google Sheets / Docs si backend i pare" },
+  { icon: BellRing, label: "Email dhe WhatsApp alerts per stafin" }
 ];
 
 export function FeaturePanelsSection() {
@@ -18,14 +18,14 @@ export function FeaturePanelsSection() {
           <div className="grid gap-0 lg:grid-cols-[0.95fr_1.05fr]">
             <div className="p-8 sm:p-10 lg:p-12">
               <div className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/36">
-                Raporte të detajuara
+                Platforma baze
               </div>
               <h2 className="font-display mt-5 max-w-xl text-balance text-3xl font-semibold leading-tight text-white sm:text-4xl">
-                Ju jep një pamje të qartë të rezervimeve, ritmit dhe kërkesës së klientëve.
+                Nje MVP i forte qe nis me kanalet sociale dhe nje sistem te thjeshte rezervimesh.
               </h2>
               <p className="mt-5 max-w-xl text-base leading-8 text-white/56">
-                Me më pak mjegull operacionale, ekipi juaj vendos më shpejt, përgjigjet më mirë dhe ruan standard
-                të lartë gjatë ditës.
+                Mund ta nisni pa software te rende: AI agent mbledh kerkesen, kontrollon rregullat e biznesit,
+                shkruan ne Google Sheets ose Docs dhe njofton pronarin ose recepsionin.
               </p>
 
               <div className="mt-12 flex flex-wrap gap-10">
@@ -65,16 +65,16 @@ export function FeaturePanelsSection() {
       <Reveal delay={0.1}>
         <div className="mt-10 grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="overflow-hidden rounded-[2rem] border border-white/8 bg-[#121213] p-8 sm:p-10">
-            <div className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/36">Panel i pastër</div>
+            <div className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/36">Kanale dhe role</div>
             <h3 className="font-display mt-5 max-w-lg text-3xl font-semibold leading-tight text-white">
-              Çdo veprim mbetet i lexueshëm, i kontrolluar dhe i bukur për t’u përdorur.
+              I njejti motor mund te sherbeje klinika mjekesore dhe restorante me rregulla te ndryshme.
             </h3>
             <p className="mt-5 max-w-xl text-base leading-8 text-white/56">
-              Më pak elemente, më shumë kuptim. Kjo është arsyeja pse FOL.AI ndihet i qetë edhe kur pas tij
-              po ndodhin shumë gjëra njëherësh.
+              Per mjeket, flow-i fokusohet te konsultat, rikthimet dhe oret e mjekut. Per restorantet, fokusohet te
+              tavolinat, numri i personave dhe oraret e pikut.
             </p>
             <div className="mt-10 inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm text-white/62">
-              Shiko rrjedhën e produktit
+              Instagram, Facebook Messenger, WhatsApp
               <ChevronRight className="h-4 w-4" />
             </div>
           </div>
@@ -83,6 +83,25 @@ export function FeaturePanelsSection() {
             <div className="relative h-full min-h-[320px]">
               <div className="absolute left-[-8%] top-[24%] h-[17rem] w-[36rem] rounded-[100%] bg-[linear-gradient(90deg,rgba(49,15,86,0),rgba(177,91,255,0.92)_28%,rgba(242,109,165,0.92)_58%,rgba(255,203,89,0.95)_92%)] blur-[3px]" />
               <div className="absolute left-[16%] top-[42%] h-[12rem] w-[28rem] rounded-[100%] bg-[linear-gradient(90deg,rgba(49,15,86,0),rgba(138,65,255,0.38)_36%,rgba(255,176,84,0.52)_100%)] blur-[18px]" />
+              <div className="relative z-10 flex h-full min-h-[320px] items-end p-8">
+                <div className="w-full rounded-[1.7rem] border border-white/10 bg-black/25 p-6 backdrop-blur-xl">
+                  <div className="flex items-center justify-between text-xs uppercase tracking-[0.24em] text-white/42">
+                    <span>Example booking log</span>
+                    <BarChart3 className="h-4 w-4 text-white/50" />
+                  </div>
+                  <div className="mt-6 space-y-3">
+                    {[
+                      "Dentist | Arber K. | E premte 10:30 | Kontroll",
+                      "Restaurant | 4 persona | Sot 20:00 | Emri: Bora",
+                      "Clinic | Rikthim | E hene 09:15 | Dr. Leka"
+                    ].map((row) => (
+                      <div key={row} className="rounded-2xl border border-white/8 bg-white/[0.04] px-4 py-3 text-sm text-white/72">
+                        {row}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

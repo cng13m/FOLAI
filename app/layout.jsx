@@ -6,9 +6,9 @@ import "@fontsource/manrope/500.css";
 import "@fontsource/manrope/700.css";
 
 export const metadata = {
-  title: "FOL.AI | Asistenti inteligjent për rezervime dhe komunikim",
+  title: "FOL.AI | AI booking agent per klinika dhe restorante",
   description:
-    "FOL.AI automatizon komunikimin me klientët, rezervimet dhe orarin për klinika, restorante, sallone dhe biznese shërbimi."
+    "FOL.AI automatizon bisedat me klientet ne Instagram, Facebook dhe WhatsApp, regjistron rezervimet ne Google Sheets ose Docs dhe njofton biznesin me email ose WhatsApp."
 };
 
 export default function RootLayout({ children }) {

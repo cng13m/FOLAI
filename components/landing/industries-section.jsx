@@ -6,40 +6,40 @@ import { SectionShell } from "@/components/ui/section-shell";
 const industries = [
   {
     icon: Stethoscope,
-    title: "Dentistë",
-    text: "Menaxhoni konsultat, kontrollet dhe pyetjet e pacientëve me një ritëm të qetë dhe profesional."
+    title: "Dentiste",
+    text: "Menaxhoni kontrollat, konsultat dhe rikthimet pa lene pacientet ne pritje."
   },
   {
     icon: ForkKnifeCrossed,
     title: "Restorante",
-    text: "Pranoni rezervime tavolinash, konfirmoni oraret dhe shmangni humbjen e klientëve gjatë pikut."
+    text: "Pranoni rezervime tavolinash, numrin e personave dhe kerkesa speciale gjate orareve te pikut."
   },
   {
     icon: HeartPulse,
     title: "Klinika",
-    text: "Organizoni takimet, rikujtimet dhe komunikimin me pacientët pa vonesa dhe pa konfuzion."
+    text: "Organizoni takimet, rikujtimet dhe pyetjet e pacienteve ne nje sistem me te rregullt."
   },
   {
     icon: Scissors,
-    title: "Sallone",
-    text: "Mbani kalendarin e mbushur, reduktoni anulimet dhe krijoni një eksperiencë më të rafinuar."
+    title: "Sallone dhe studio",
+    text: "Ruani kalendarin e mbushur dhe reduktoni no-show me njoftime automatike."
   },
   {
     icon: Building2,
-    title: "Biznese shërbimi",
-    text: "Çdo biznes me orare dhe klientë të përsëritur fiton më shumë rregull, përgjigje më të shpejta dhe më shumë rezervime."
+    title: "Biznese sherbimi",
+    text: "Cdo ekip qe merret me orare, klienta te perseritur dhe pyetje te shpeshta mund ta perdore si reception digital."
   }
 ];
 
 export function IndustriesSection() {
   return (
-    <SectionShell id="zgjidhje">
+    <SectionShell id="zgjidhje-audienca">
       <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <Reveal>
           <SectionHeading
-            eyebrow="Për kë është"
-            title="Ndërtuar për biznese që jetojnë nga ritmi, saktësia dhe besimi."
-            description="Nga klinikat dentare te restorantet dhe sallonet, FOL.AI përshtatet me mënyrën si punoni dhe ruan standardin që klientët tuaj presin."
+            eyebrow="Per ke eshte"
+            title="Ndertuar per biznese qe humbin para sa here nje mesazh mbetet pa pergjigje."
+            description="Nga klinikat dentare te restorantet dhe sallonet, FOL.AI pershtatet me menyren si punoni dhe ruan nje komunikim te qarte me klientin."
           />
         </Reveal>
 
@@ -49,7 +49,7 @@ export function IndustriesSection() {
 
             return (
               <Reveal key={industry.title} delay={index * 0.06}>
-                <div className="glass-panel group h-full rounded-[1.6rem] p-5 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-emerald-300/18">
+                <div className="glass-panel group h-full rounded-[1.6rem] p-5 transition duration-300 hover:-translate-y-1 hover:border-emerald-300/18">
                   <div className="flex items-start gap-4">
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-cyan-100 transition duration-300 group-hover:bg-cyan-300/12">
                       <Icon className="h-5 w-5" />

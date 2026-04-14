@@ -1,4 +1,4 @@
-import { MessageCircleMore, Sparkles, CalendarCheck2, BellRing } from "lucide-react";
+import { BellRing, CalendarCheck2, MessageCircleMore, Sparkles } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { SectionShell } from "@/components/ui/section-shell";
@@ -6,34 +6,34 @@ import { SectionShell } from "@/components/ui/section-shell";
 const steps = [
   {
     icon: MessageCircleMore,
-    title: "Klienti dërgon mesazh",
-    description: "Pyetjet dhe kërkesat vijnë nga WhatsApp, Instagram, Messenger ose kanale të tjera."
+    title: "Klienti nis biseden",
+    description: "Kontakti vjen nga WhatsApp, Instagram DM ose Facebook Messenger."
   },
   {
     icon: Sparkles,
-    title: "FOL.AI përgjigjet automatikisht",
-    description: "Asistenti kupton kërkesën, jep përgjigjen e duhur dhe udhëheq klientin pa pritje."
+    title: "Agjenti AI flet ne albanian",
+    description: "Boti pyet per diten, oren, sherbimin dhe mbyll paqartesite si nje recepsionist i mire."
   },
   {
     icon: CalendarCheck2,
     title: "Rezervimi regjistrohet",
-    description: "Orari i lirë zgjidhet menjëherë dhe rezervimi futet në sistem me saktësi."
+    description: "Takimi ose tavolina ruhet ne Google Sheets ose Docs me emrin, oren dhe detajet."
   },
   {
     icon: BellRing,
-    title: "Biznesi njoftohet menjëherë",
-    description: "Stafi merr njoftim të qartë për rezervimin, ndryshimin ose pyetjen që kërkon vëmendje."
+    title: "Biznesi njoftohet menjehere",
+    description: "Stafi merr email ose WhatsApp per rezervimin e ri, ndryshimet ose pyetjet qe duhen marre nga njeriu."
   }
 ];
 
 export function HowItWorksSection() {
   return (
-    <SectionShell id="si-funksionon" className="section-fade">
+    <SectionShell id="si-funksionon">
       <Reveal>
         <SectionHeading
           eyebrow="Si funksionon"
-          title="Një rrjedhë e qartë që e bën komunikimin të duket i lehtë."
-          description="FOL.AI merr përsipër bisedën me klientin nga kontakti i parë deri te rezervimi i konfirmuar, pa krijuar ngarkesë shtesë për ekipin tuaj."
+          title="Nga mesazhi i pare deri te rezervimi i konfirmuar, pa telefonata dhe pa konfuzion."
+          description="Ky eshte flow-i kryesor i produktit: klienti shkruan ne rrjetet sociale, AI agent mbledh te dhenat, regjistron takimin dhe sinjalizon ekipin ne cast."
           align="center"
         />
       </Reveal>
@@ -44,7 +44,7 @@ export function HowItWorksSection() {
 
           return (
             <Reveal key={step.title} delay={index * 0.08}>
-              <div className="glass-panel group h-full rounded-[1.75rem] p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-cyan-300/20">
+              <div className="glass-panel group h-full rounded-[1.75rem] p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-300/20">
                 <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-300/18 via-white/10 to-emerald-300/12 text-cyan-100 transition duration-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(103,232,249,0.18)]">
                   <Icon className="h-6 w-6" />
                 </div>

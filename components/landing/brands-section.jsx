@@ -4,20 +4,20 @@ import { motion } from "framer-motion";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionShell } from "@/components/ui/section-shell";
 
-const brands = ["Dentistë", "Restorante", "Klinika", "Sallone", "Studio"];
+const brands = ["Instagram", "Facebook", "WhatsApp", "Google Sheets", "Email alerts"];
 
 export function BrandsSection() {
   return (
-    <SectionShell id="demo" className="pt-8 sm:pt-10">
+    <SectionShell id="integrimet" className="pt-8 sm:pt-10">
       <Reveal>
         <div className="relative overflow-hidden rounded-[2rem] border border-white/8 bg-[#0f0f10] px-6 py-14 sm:px-10 sm:py-16">
           <div className="pointer-events-none absolute left-1/2 top-0 h-[17rem] w-[46rem] -translate-x-1/2 rounded-b-[100%] bg-[linear-gradient(180deg,rgba(248,226,236,0.95)_0%,rgba(191,103,255,0.92)_36%,rgba(255,205,100,0.95)_100%)] blur-[2px]" />
           <div className="pointer-events-none absolute left-1/2 top-[3.6rem] h-[12rem] w-[34rem] -translate-x-1/2 rounded-b-[100%] bg-[linear-gradient(180deg,rgba(21,8,33,0.9)_0%,rgba(21,8,33,0.12)_100%)]" />
 
           <div className="relative pt-40 text-center">
-            <div className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/36">Bizneset që përfitojnë</div>
+            <div className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/36">Integrimet e para</div>
             <h2 className="font-display mt-5 text-balance text-3xl font-semibold text-white sm:text-4xl lg:text-[3.15rem]">
-              Ndërtuar për marka që duan të duken të organizuara dhe premium.
+              Nisi me mjetet qe bizneset i perdorin tashme, pastaj zgjeroje ne CRM ose kalendar me vone.
             </h2>
 
             <div className="mx-auto mt-12 flex max-w-4xl flex-wrap items-center justify-center gap-4">

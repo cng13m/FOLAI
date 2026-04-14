@@ -7,10 +7,10 @@ import { Reveal } from "@/components/ui/reveal";
 import { SectionShell } from "@/components/ui/section-shell";
 
 const metrics = [
-  { value: "24/7", label: "Rezervime pa ndërprerje" },
-  { value: "< 5 sek.", label: "Përgjigje ndaj klientit" },
-  { value: "93%", label: "Pyetje të zgjidhura" },
-  { value: "Në kohë reale", label: "Njoftime për ekipin" }
+  { value: "24/7", label: "Biseda automatike ne shqip" },
+  { value: "< 10 sek", label: "Pergjigje ne Instagram, WhatsApp dhe Messenger" },
+  { value: "1 panel", label: "Rezervime per klinika dhe restorante" },
+  { value: "Email + WA", label: "Njoftime direkte per biznesin" }
 ];
 
 export function HeroSection() {
@@ -34,22 +34,24 @@ export function HeroSection() {
 
             <div className="relative mx-auto max-w-3xl text-center">
               <div className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/52">
-                Platformë inteligjente për biznese shërbimi
+                SaaS per rezervime me AI agent ne gjuhen shqipe
               </div>
               <h1 className="font-display mx-auto mt-6 max-w-4xl text-balance text-4xl font-semibold leading-[1.02] text-white sm:text-6xl lg:text-[5rem]">
-                Rrit rezervimet dhe mbaje komunikimin nën kontroll me FOL.AI.
+                Agjenti qe flet me klientet, cakton oraret dhe njofton biznesin ne kohe reale.
               </h1>
               <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-white/68 sm:text-lg">
-                Përgjigje automatike, organizim i orarit dhe një eksperiencë premium për klientët që ju kontaktojnë.
+                FOL.AI merr mesazhet nga Instagram, Facebook dhe WhatsApp, flet me klientet ne albanian,
+                regjistron rezervimet ne Google Sheets ose Docs, dhe dergon njoftime te biznesi me email ose
+                WhatsApp.
               </p>
 
               <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                <ButtonLink href="#demo" variant="light" className="gap-2 px-7 py-3.5">
-                  Kërko demonstrim
+                <ButtonLink href="#fillo" variant="light" className="gap-2 px-7 py-3.5">
+                  Kerko demo
                   <ArrowRight className="h-4 w-4" />
                 </ButtonLink>
                 <ButtonLink href="#vecori" variant="ghost" className="px-7 py-3.5">
-                  Shiko veçoritë
+                  Shiko platformen
                 </ButtonLink>
               </div>
             </div>

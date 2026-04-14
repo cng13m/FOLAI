@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 import { ButtonLink } from "@/components/ui/button-link";
 
 const links = [
-  { href: "#zgjidhje", label: "Përfitime" },
-  { href: "#vecori", label: "Veçori" },
-  { href: "#demo", label: "Industri" }
+  { href: "#si-funksionon", label: "Si funksionon" },
+  { href: "#vecori", label: "Platforma" },
+  { href: "#zgjidhje", label: "Per ke eshte" },
+  { href: "#integrimet", label: "Integrimet" }
 ];
 
 export function Navbar() {
@@ -24,7 +25,7 @@ export function Navbar() {
           </div>
           <div>
             <div className="font-display text-sm font-semibold tracking-[0.34em] text-white">FOL.AI</div>
-            <div className="text-[0.7rem] tracking-[0.2em] text-white/40">Rezervime dhe komunikim</div>
+            <div className="text-[0.7rem] tracking-[0.2em] text-white/40">AI booking agent per biznese</div>
           </div>
         </a>
 
@@ -36,8 +37,8 @@ export function Navbar() {
           ))}
         </nav>
 
-        <ButtonLink href="#demo" variant="light" className="hidden sm:inline-flex px-6">
-          Kërko demonstrim
+        <ButtonLink href="#fillo" variant="light" className="hidden sm:inline-flex px-6">
+          Kerko demo
         </ButtonLink>
       </div>
     </motion.header>
