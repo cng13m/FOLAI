@@ -1,32 +1,37 @@
-import { ArrowRight, BriefcaseBusiness, CalendarRange, MessageSquareReply } from "lucide-react";
-import { ButtonLink } from "@/components/ui/button-link";
+import { Clock3, MessageSquareReply, Sparkles } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionShell } from "@/components/ui/section-shell";
 
 const cards = [
   {
-    eyebrow: "Asistent AI per bisedat e para",
-    title: "Klienti nuk pret per pergjigje dhe biznesi nuk humbet lead-et e nxehta.",
+    eyebrow: "Pergjigje te shpejta",
+    title: "Klienti nuk mbetet ne pritje dhe nuk largohet te dikush tjeter.",
     description:
-      "FOL.AI kupton pyetjet me te zakonshme, flet natyrshem ne SHQIP dhe i con klientet drejt rezervimit te sakte.",
-    button: "Shiko flow-in",
+      "Kur dikush ju shkruan, merr nje pergjigje te qarte dhe profesionale ne SHQIP, pa pritur gjate.",
     tone:
       "bg-[linear-gradient(135deg,rgba(248,241,247,0.98),rgba(241,228,244,0.92))] text-slate-950",
     icon: MessageSquareReply,
-    accent: "dark",
-    href: "#si-funksionon"
+    accent: "dark"
   },
   {
-    eyebrow: "Rezervime qe futen direkt ne sistemin e punes",
-    title: "Orari, tavolina ose takimi kalojne ne nje rrjedhe te vetme operative.",
+    eyebrow: "Me pak ngarkese",
+    title: "Stafi juaj merret me klientin ne lokal ose ne klinike, jo me telefonin gjithe diten.",
     description:
-      "Perfekt per mjeke, klinika, dentiste dhe restorante qe duan me pak pune manuale dhe me shume kontroll.",
-    button: "Shiko platformen",
+      "Me pak nderprerje, me pak konfuzion dhe me shume kohe per sherbim me cilesi.",
     tone:
       "bg-[linear-gradient(135deg,rgba(242,75,157,0.98),rgba(230,56,128,0.96))] text-white",
-    icon: CalendarRange,
-    accent: "light",
-    href: "#vecori"
+    icon: Clock3,
+    accent: "light"
+  },
+  {
+    eyebrow: "Pamje me serioze",
+    title: "Biznesi juaj duket i organizuar qe nga mesazhi i pare.",
+    description:
+      "Cdo bisede i jepet i njejti ton i kujdesshem, i qarte dhe i rregullt, pa gabime te kota.",
+    tone:
+      "bg-[linear-gradient(135deg,#171719_0%,#111112_100%)] text-white",
+    icon: Sparkles,
+    accent: "light"
   }
 ];
 
@@ -35,20 +40,19 @@ export function ReasonsSection() {
     <SectionShell id="zgjidhje" className="pt-10 sm:pt-12">
       <Reveal>
         <div className="mx-auto max-w-3xl text-center">
-          <div className="text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-white/42">Pse FOL.AI</div>
+          <div className="text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-white/42">Pse e zgjedhin</div>
           <h2 className="font-display mt-5 text-balance text-3xl font-semibold text-white sm:text-4xl lg:text-[3.2rem]">
-            Me pak telefonata, me pak humbje orari, me shume rezervime te kapura.
+            Nje eksperience me e mire per klientin. Nje dite me e qete per biznesin.
           </h2>
           <p className="mt-5 text-base leading-8 text-white/56 sm:text-lg">
-            Produkti eshte projektuar per bizneset qe varen nga shpejtesia e pergjigjes dhe saktesia e kalendarit.
+            E ndertuar per biznese qe duan te duken te rregullta, te shpejta dhe serioze ne cdo bisede.
           </p>
         </div>
       </Reveal>
 
-      <div className="mt-12 grid gap-5 xl:grid-cols-2">
+      <div className="mt-12 grid gap-5 xl:grid-cols-3">
         {cards.map((card, index) => {
           const Icon = card.icon;
-          const buttonVariant = card.accent === "dark" ? "dark" : "light";
 
           return (
             <Reveal key={card.title} delay={index * 0.08}>
@@ -78,13 +82,6 @@ export function ReasonsSection() {
                 >
                   {card.description}
                 </p>
-
-                <div className="mt-10">
-                  <ButtonLink href={card.href} variant={buttonVariant} className="gap-2 px-6 py-3.5">
-                    {card.button}
-                    <ArrowRight className="h-4 w-4" />
-                  </ButtonLink>
-                </div>
               </div>
             </Reveal>
           );
@@ -93,14 +90,11 @@ export function ReasonsSection() {
 
       <Reveal delay={0.16}>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-8 rounded-[1.7rem] border border-white/8 bg-white/[0.02] px-6 py-5">
-          <div className="flex items-center gap-3 text-sm text-white/60">
-            <BriefcaseBusiness className="h-4 w-4" />
-            Mjeke, klinika, restorante
-          </div>
+          <div className="text-sm text-white/60">Klinika</div>
           <div className="h-4 w-px bg-white/10" />
-          <div className="text-sm text-white/60">Rezervime te automatizuara</div>
+          <div className="text-sm text-white/60">Mjeke</div>
           <div className="h-4 w-px bg-white/10" />
-          <div className="text-sm text-white/60">Pergjigje ne SHQIP</div>
+          <div className="text-sm text-white/60">Restorante</div>
         </div>
       </Reveal>
     </SectionShell>

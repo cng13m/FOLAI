@@ -7,10 +7,10 @@ import { Reveal } from "@/components/ui/reveal";
 import { SectionShell } from "@/components/ui/section-shell";
 
 const metrics = [
-  { value: "24/7", label: "Biseda automatike ne SHQIP" },
-  { value: "< 10 sek", label: "Pergjigje ne Instagram, WhatsApp dhe Messenger" },
-  { value: "1 panel", label: "Rezervime per klinika dhe restorante" },
-  { value: "Email + WA", label: "Njoftime direkte per biznesin" }
+  { value: "24/7", label: "Pergjigje ne SHQIP" },
+  { value: "Pa vonesa", label: "Me pak mesazhe te humbura" },
+  { value: "Me shume prenotime", label: "Me pak pune manuale" },
+  { value: "Me qetesi", label: "Per ju dhe stafin tuaj" }
 ];
 
 export function HeroSection() {
@@ -34,15 +34,14 @@ export function HeroSection() {
 
             <div className="relative mx-auto max-w-3xl text-center">
               <div className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/52">
-                SaaS per rezervime me asistent AI ne SHQIP
+                Per klinika, mjeke dhe restorante
               </div>
               <h1 className="font-display mx-auto mt-6 max-w-4xl text-balance text-4xl font-semibold leading-[1.02] text-white sm:text-6xl lg:text-[5rem]">
-                Agjenti qe flet me klientet, cakton oraret dhe njofton biznesin ne kohe reale.
+                Klientet marrin pergjigje menjehere. Ju merrni me shume rezervime.
               </h1>
               <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-white/68 sm:text-lg">
-                FOL.AI merr mesazhet nga Instagram, Facebook dhe WhatsApp, flet me klientet ne SHQIP,
-                regjistron rezervimet ne Google Sheets dhe dergon njoftime te biznesi me email ose
-                WhatsApp.
+                FOL.AI ju ndihmon te mos humbni kliente nga mesazhet e pambyllura. Pergjigjet ne SHQIP,
+                mban biseden te qarte dhe e ben rezervimin me te lehte per klientin.
               </p>
 
               <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -50,8 +49,8 @@ export function HeroSection() {
                   Kerko demo
                   <ArrowRight className="h-4 w-4" />
                 </ButtonLink>
-                <ButtonLink href="#vecori" variant="ghost" className="px-7 py-3.5">
-                  Shiko platformen
+                <ButtonLink href="#zgjidhje" variant="ghost" className="px-7 py-3.5">
+                  Shiko perfitimet
                 </ButtonLink>
               </div>
             </div>

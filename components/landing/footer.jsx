@@ -1,8 +1,8 @@
 const links = [
-  { href: "#si-funksionon", label: "Si funksionon" },
-  { href: "#vecori", label: "Platforma" },
-  { href: "#integrimet", label: "Integrimet" },
-  { href: "mailto:demo@fol.ai", label: "Kontakt" }
+  { href: "#zgjidhje", label: "Perfitimet" },
+  { href: "#vecori", label: "Pse ne" },
+  { href: "#fillo", label: "Demo" },
+  { href: "mailto:demo@fol.ai", label: "Email" }
 ];
 
 export function Footer() {
@@ -12,7 +12,7 @@ export function Footer() {
         <div>
           <div className="font-display text-lg font-semibold tracking-[0.28em] text-white">FOL.AI</div>
           <p className="mt-2 text-sm leading-7 text-white/42">
-            SaaS per komunikim dhe rezervime te automatizuara per klinika, mjeke dhe restorante.
+            Pergjigje me te shpejta, me pak rremuje dhe nje pervoje me e mire per klientin.
           </p>
         </div>
 
