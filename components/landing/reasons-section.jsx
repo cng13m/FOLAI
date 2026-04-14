@@ -5,9 +5,8 @@ import { SectionShell } from "@/components/ui/section-shell";
 const cards = [
   {
     eyebrow: "Pergjigje te shpejta",
-    title: "Klienti nuk mbetet ne pritje dhe nuk largohet te dikush tjeter.",
-    description:
-      "Kur dikush ju shkruan, merr nje pergjigje te qarte dhe profesionale ne SHQIP, pa pritur gjate.",
+    title: "Klienti nuk pret per te marre nje pergjigje.",
+    description: "Biseda nis menjehere dhe ruan nje ton te qete e te qarte ne SHQIP.",
     tone:
       "bg-[linear-gradient(135deg,rgba(248,241,247,0.98),rgba(241,228,244,0.92))] text-slate-950",
     icon: MessageSquareReply,
@@ -15,9 +14,8 @@ const cards = [
   },
   {
     eyebrow: "Me pak ngarkese",
-    title: "Stafi juaj merret me klientin ne lokal ose ne klinike, jo me telefonin gjithe diten.",
-    description:
-      "Me pak nderprerje, me pak konfuzion dhe me shume kohe per sherbim me cilesi.",
+    title: "Ekipi juaj fiton kohe gjate dites.",
+    description: "Me pak telefonata te perseritura, me pak nderprerje dhe me shume fokus.",
     tone:
       "bg-[linear-gradient(135deg,rgba(242,75,157,0.98),rgba(230,56,128,0.96))] text-white",
     icon: Clock3,
@@ -25,9 +23,8 @@ const cards = [
   },
   {
     eyebrow: "Pamje me serioze",
-    title: "Biznesi juaj duket i organizuar qe nga mesazhi i pare.",
-    description:
-      "Cdo bisede i jepet i njejti ton i kujdesshem, i qarte dhe i rregullt, pa gabime te kota.",
+    title: "Kontakti i pare duket i rregullt dhe i besueshem.",
+    description: "Nje pervoje e kujdesur krijon pershtypje me profesionale qe ne minutat e para.",
     tone:
       "bg-[linear-gradient(135deg,#171719_0%,#111112_100%)] text-white",
     icon: Sparkles,
@@ -40,12 +37,12 @@ export function ReasonsSection() {
     <SectionShell id="zgjidhje" className="pt-10 sm:pt-12">
       <Reveal>
         <div className="mx-auto max-w-3xl text-center">
-          <div className="text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-white/42">Pse e zgjedhin</div>
+          <div className="text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-white/42">Pse funksionon</div>
           <h2 className="font-display mt-5 text-balance text-3xl font-semibold text-white sm:text-4xl lg:text-[3.2rem]">
-            Nje eksperience me e mire per klientin. Nje dite me e qete per biznesin.
+            Sepse klienti kupton menjehere cfare po ndodh.
           </h2>
           <p className="mt-5 text-base leading-8 text-white/56 sm:text-lg">
-            E ndertuar per biznese qe duan te duken te rregullta, te shpejta dhe serioze ne cdo bisede.
+            Nje rrjedhe e qarte ne SHQIP ul pyetjet e panevojshme dhe e mban ekipin me te lire.
           </p>
         </div>
       </Reveal>
@@ -95,6 +92,8 @@ export function ReasonsSection() {
           <div className="text-sm text-white/60">Mjeke</div>
           <div className="h-4 w-px bg-white/10" />
           <div className="text-sm text-white/60">Restorante</div>
+          <div className="h-4 w-px bg-white/10" />
+          <div className="text-sm text-white/60">Sherbime</div>
         </div>
       </Reveal>
     </SectionShell>

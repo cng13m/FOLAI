@@ -6,8 +6,8 @@ import { Reveal } from "@/components/ui/reveal";
 import { SectionShell } from "@/components/ui/section-shell";
 
 const points = [
-  { icon: CheckCircle2, label: "Pergjigje te qarta dhe te qendrueshme" },
-  { icon: ShieldCheck, label: "Me pak gabime ne komunikim" }
+  { icon: CheckCircle2, label: "Pa konfuzion" },
+  { icon: ShieldCheck, label: "E rregullt" }
 ];
 
 export function FeaturePanelsSection() {
@@ -18,13 +18,13 @@ export function FeaturePanelsSection() {
           <div className="grid gap-0 lg:grid-cols-[0.95fr_1.05fr]">
             <div className="p-8 sm:p-10 lg:p-12">
               <div className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/36">
-                Qetesi ne pune
+                Pse ndihet mire
               </div>
               <h2 className="font-display mt-5 max-w-xl text-balance text-3xl font-semibold leading-tight text-white sm:text-4xl">
-                Kur klienti merr pergjigje shpejt, e gjithe dita ecen me mire.
+                Nje hyrje e qarte i jep klientit besim qe ne fillim.
               </h2>
               <p className="mt-5 max-w-xl text-base leading-8 text-white/56">
-                Me pak nderprerje, me pak stres per stafin dhe me shume rend ne menyren si hyn rezervimi.
+                Ai kupton cfare duhet te beje, ndersa ju mbani nje ritem me te rregullt gjate dites.
               </p>
 
               <div className="mt-12 flex flex-wrap gap-10">
@@ -64,12 +64,14 @@ export function FeaturePanelsSection() {
       <Reveal delay={0.1}>
         <div className="mt-10 grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="overflow-hidden rounded-[2rem] border border-white/8 bg-[#121213] p-8 sm:p-10">
-            <div className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/36">Cfare ndjen klienti</div>
+            <div className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/36">
+              Cfare ndjen klienti
+            </div>
             <h3 className="font-display mt-5 max-w-lg text-3xl font-semibold leading-tight text-white">
-              Nje bisede e thjeshte, e shpejte dhe pa paqartesi.
+              E thjeshte, e qarte, dhe pa sforcim.
             </h3>
             <p className="mt-5 max-w-xl text-base leading-8 text-white/56">
-              Klienti e kupton shpejt cfare duhet te beje, ju merrni nje kerkese me te plote dhe cdo hap duket me profesional.
+              Gjithcka rrjedh natyrshem dhe biznesi juaj le nje pershtypje me te besueshme.
             </p>
             <div className="mt-10 inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm text-white/62">
               E qarte, e sjellshme, ne SHQIP
@@ -84,16 +86,15 @@ export function FeaturePanelsSection() {
               <div className="relative z-10 flex h-full min-h-[320px] items-end p-8">
                 <div className="w-full rounded-[1.7rem] border border-white/10 bg-black/25 p-6 backdrop-blur-xl">
                   <div className="flex items-center justify-between text-xs uppercase tracking-[0.24em] text-white/42">
-                    <span>Ndjesia qe mbetet</span>
+                    <span>Rrjedha qe mbetet</span>
                     <HeartHandshake className="h-4 w-4 text-white/50" />
                   </div>
                   <div className="mt-6 space-y-3">
-                    {[
-                      "Pergjigje e shpejte",
-                      "Rezervim me me pak mundim",
-                      "Sherbim qe duket me serioz"
-                    ].map((row) => (
-                      <div key={row} className="rounded-2xl border border-white/8 bg-white/[0.04] px-4 py-3 text-sm text-white/72">
+                    {["Pyetje e shkurter", "Rezervim i thjeshte", "Ndjekje e kujdesshme"].map((row) => (
+                      <div
+                        key={row}
+                        className="rounded-2xl border border-white/8 bg-white/[0.04] px-4 py-3 text-sm text-white/72"
+                      >
                         {row}
                       </div>
                     ))}
