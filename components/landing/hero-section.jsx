@@ -23,8 +23,8 @@ export function HeroSection() {
   return (
     <SectionShell id="krye" className="pb-8 pt-4 sm:pb-10 sm:pt-5">
       <Reveal>
-        <div className="overflow-hidden rounded-[2rem] border border-white/8 bg-[#111112] p-3 shadow-[0_24px_80px_rgba(0,0,0,0.32)] sm:p-4">
-          <div className="relative overflow-hidden rounded-[1.6rem] border border-white/6 bg-[#131314] px-5 py-12 sm:px-10 sm:py-16 lg:px-12 lg:py-20">
+        <div className="overflow-hidden rounded-[2rem] bg-[#111112] sm:p-0">
+          <div className="relative overflow-hidden rounded-[1.6rem] bg-[#111112] px-5 py-12 sm:px-10 sm:py-16 lg:px-12 lg:py-20">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_18%,rgba(255,214,164,0.16),transparent_18%),radial-gradient(circle_at_68%_30%,rgba(236,67,137,0.18),transparent_20%),radial-gradient(circle_at_78%_18%,rgba(168,61,255,0.18),transparent_16%)]" />
             <motion.div
               className="absolute left-[8%] top-[6%] h-[20rem] w-[20rem] rounded-[38%] bg-[linear-gradient(135deg,#f5d5a8_0%,#dd5a47_28%,#d13a89_62%,#7c30ff_100%)] opacity-90 shadow-[0_32px_120px_rgba(0,0,0,0.4)] blur-[2px]"
@@ -39,7 +39,7 @@ export function HeroSection() {
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(9,9,10,0.08)_0%,rgba(9,9,10,0.28)_100%)]" />
 
             <div className="relative mx-auto max-w-3xl text-center">
-              <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-white/64 backdrop-blur-sm">
+              <div className="inline-flex items-center rounded-full bg-white/5 px-4 py-1.5 text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-white/64">
                 Per klinika, mjeke dhe restorante
               </div>
               <h1 className="font-display mx-auto mt-6 max-w-4xl text-balance text-4xl font-semibold leading-[0.96] tracking-[-0.03em] text-white sm:text-6xl lg:text-[5.1rem]">
@@ -78,8 +78,7 @@ export function HeroSection() {
           <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {metrics.map((metric, index) => (
               <Reveal key={metric.label} delay={0.06 * index}>
-                <div className="relative overflow-hidden rounded-[1.55rem] border border-white/8 bg-white/[0.03] px-5 py-5">
-                  <div className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.36),transparent)]" />
+                <div className="relative overflow-hidden rounded-[1.55rem] bg-[#151516] px-5 py-5">
                   <div className="font-display text-[1.7rem] font-semibold text-white">{metric.value}</div>
                   <div className="mt-2 text-sm leading-6 text-white/54">{metric.label}</div>
                 </div>

@@ -17,13 +17,13 @@ export function Navbar() {
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       className="relative z-30 px-4 pt-4 sm:px-5 sm:pt-5"
     >
-      <div className="flex items-center justify-between rounded-full border border-white/8 bg-white/[0.03] px-4 py-3 shadow-[0_20px_60px_rgba(0,0,0,0.2)] backdrop-blur-xl sm:px-6">
+      <div className="flex items-center justify-between px-2 py-3 sm:px-4">
         <a
           href="#krye"
           aria-label="Kthehu te kreu i faqes"
           className="group flex items-center gap-3 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b0b0c]"
         >
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/12 bg-white/[0.04] transition duration-300 group-hover:border-white/20 group-hover:bg-white/[0.07]">
+          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#171719] transition duration-300 group-hover:bg-[#1d1d1f]">
             <span className="font-display text-sm font-bold tracking-[0.26em] text-white">F</span>
           </div>
           <div>
