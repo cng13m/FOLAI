@@ -86,7 +86,7 @@ export function ReasonsSection() {
       </div>
 
       <Reveal delay={0.16}>
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-8 rounded-[1.7rem] border border-white/8 bg-white/[0.02] px-6 py-5">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-8 rounded-[1.7rem] bg-[#141415] px-6 py-5">
           <div className="text-sm text-white/60">Klinika</div>
           <div className="h-4 w-px bg-white/10" />
           <div className="text-sm text-white/60">Mjeke</div>

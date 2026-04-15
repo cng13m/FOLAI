@@ -7,7 +7,7 @@ export function FinalCtaSection() {
   return (
     <SectionShell id="fillo" className="pt-6 sm:pt-8 lg:pt-10">
       <Reveal>
-        <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,#121213_0%,#171719_100%)] px-6 py-12 shadow-[0_28px_90px_rgba(0,0,0,0.24)] sm:px-10 sm:py-14 lg:px-14">
+        <div className="relative overflow-hidden rounded-[2rem] bg-[linear-gradient(135deg,#121213_0%,#171719_100%)] px-6 py-12 shadow-[0_28px_90px_rgba(0,0,0,0.24)] sm:px-10 sm:py-14 lg:px-14">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(245,213,168,0.08),transparent_30%),radial-gradient(circle_at_82%_18%,rgba(242,75,157,0.1),transparent_28%)]" />
 
           <div className="relative mx-auto max-w-3xl text-center">

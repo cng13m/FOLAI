@@ -23,8 +23,8 @@ export function HeroSection() {
   return (
     <SectionShell id="krye" className="pb-8 pt-4 sm:pb-10 sm:pt-5">
       <Reveal>
-        <div className="overflow-hidden rounded-[2rem] bg-[#111112] sm:p-0">
-          <div className="relative overflow-hidden rounded-[1.6rem] bg-[#111112] px-5 py-12 sm:px-10 sm:py-16 lg:px-12 lg:py-20">
+        <div className="overflow-hidden bg-[#111112]">
+          <div className="relative overflow-hidden bg-[#111112] px-5 py-12 sm:px-10 sm:py-16 lg:px-12 lg:py-20">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_18%,rgba(255,214,164,0.16),transparent_18%),radial-gradient(circle_at_68%_30%,rgba(236,67,137,0.18),transparent_20%),radial-gradient(circle_at_78%_18%,rgba(168,61,255,0.18),transparent_16%)]" />
             <motion.div
               className="absolute left-[8%] top-[6%] h-[20rem] w-[20rem] rounded-[38%] bg-[linear-gradient(135deg,#f5d5a8_0%,#dd5a47_28%,#d13a89_62%,#7c30ff_100%)] opacity-90 shadow-[0_32px_120px_rgba(0,0,0,0.4)] blur-[2px]"

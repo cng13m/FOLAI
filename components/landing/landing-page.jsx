@@ -12,7 +12,7 @@ export function LandingPage() {
       <AnimatedBackground />
 
       <div className="relative z-10">
-        <div className="mx-auto min-h-screen max-w-[1600px] overflow-hidden bg-[#0b0b0c]">
+        <div className="min-h-screen w-full bg-[#0b0b0c]">
           <Navbar />
           <HeroSection />
           <ReasonsSection />
